@@ -1,11 +1,12 @@
-{% extends "tasks/loyaout.html" %}
+{% extends "tasks/layout.html" %}
 
-{% block body %}
-    <form>
-        <h1>Add Task</h1>
-        <input type="text" name="task">
-        <input type="submit">
-    </form>
+    {% block body %}
+        <form>
+            <h1>Add Task</h1>
+            <input type="text" name="task">
+            <input type="submit">
+        </form>   
+        <a href="{% url 'tasks:index' %}">View tasks</a>  
 
 {% endblock %}
     
