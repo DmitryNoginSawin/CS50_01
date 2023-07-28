@@ -1,7 +1,10 @@
 from django.urls import path
 
-from .import views
+from . import views
 
-urlpatrerns = [
-    path("", views.index, name="index")
+urlpatterns = [
+    path("", views.index, name="index"),
+    path("<str:name>", views.greet, name="greet"),
+    path("dmitry", views.dmitry, name="Dmitry"),
+    path("david", views.david, name="David")
 ]
